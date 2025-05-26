@@ -1,22 +1,25 @@
-# 🧠 MNIST Digit Classifier using CNN
+# 🧠 MNIST Digit Classifier using ANN
 
-This is a Convolutional Neural Network built using TensorFlow and Keras to classify handwritten digits from the MNIST dataset.
+This project demonstrates a simple **Artificial Neural Network (ANN)** built using TensorFlow and Keras to classify handwritten digits from the MNIST dataset.
 
-- Dataset: [MNIST Digits](http://yann.lecun.com/exdb/mnist/) (also available via `keras.datasets`)
+## 📁 Dataset
+
+- **MNIST Handwritten Digits**  
+- 28x28 grayscale images of digits (0–9)  
+- Built-in in `keras.datasets`
 
 ## 🧰 Tools Used
 
 - Python
 - TensorFlow / Keras
-- Matplotlib / Seaborn
+- NumPy
+- Matplotlib
 
 ## 🚀 Model Architecture
 
-- Conv2D (32 filters) → ReLU
-- MaxPooling2D
-- Conv2D (64 filters) → ReLU
-- MaxPooling2D
-- Flatten → Dense(64) → Dropout → Dense(10)
+- Flatten Input (28x28 → 784)
+- Dense Layer (128 units) + ReLU
+- Dense Layer (10 units) + Sigmoid
 
 ## 🎯 Accuracy Achieved
 
@@ -26,5 +29,8 @@ This is a Convolutional Neural Network built using TensorFlow and Keras to class
 
 ## 🔍 How to Run
 
+1. Clone the repo
+2. Run the Jupyter notebook or open in Google Colab
+
 ```bash
-pip install -r requirements.txt
+pip install tensorflow matplotlib numpy
